@@ -117,8 +117,6 @@
   margin: 20px 0; /* Espacio superior e inferior para la línea */
 }
 
-/*MODAL CARTA*/
-
 /* Estilo para el modal de la carta */
 .modal {
   display: none;
@@ -140,11 +138,9 @@
   transform: translate(-50%, -50%);
   width: 40%; /* Ajusta el ancho como sea necesario */
   max-width: 600px;
-  background-color: #000000; /* Fondo oscuro para el modal */
-  color: white; /* Texto blanco para contraste */
+  background-color: #000000;
   padding: 20px;
   border-radius: 5px;
-  border: 1px solid #888;
 }
 
 /* Estilo para el botón de cerrar del modal de la carta */
@@ -162,15 +158,31 @@
   cursor: pointer;
 }
 
-.verCartaBtn {
-  background-color: #ffffff; /* Color de fondo para el botón de Glovo */
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
+/* Estilos para los botones dentro del modal de la carta */
+.verCartaBtn,
 .descargarCartaBtn {
-  background-color: #ffffff; /* Color de fondo para el botón de Glovo */
-  font-family:Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  display: block;
+  width: 60%;
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+  color: #000000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1em;
+  margin-bottom: 15%;
 }
 
+/* Estilo adicional para el botón de "Ver Carta" */
+.verCartaBtn {
+  margin-bottom: 10px;
+}
+
+/* Estilos adicionales para los botones cuando se pasa el cursor sobre ellos */
+.verCartaBtn:hover,
+.descargarCartaBtn:hover {
+  background-color: #e6e6e6;
+}
